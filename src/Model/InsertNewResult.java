@@ -240,7 +240,22 @@ public class InsertNewResult extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    public String CheckNumber(int num){
+        boolean res = false;
+        String command = "";
+        
+        if (num < 0 || num > 0){
+            res = true;
+            command = "invalid";
+        }
+        else{
+            command = "valid";
+        }
+        
+        return command;
+    }
+    
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         setVisible(false);

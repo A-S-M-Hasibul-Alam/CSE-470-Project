@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author A S M Hasibul Alam
  */
+@SuppressWarnings("InitializerMayBeStatic")
 public class studentHome extends javax.swing.JFrame {
 
     /**
@@ -23,6 +24,16 @@ public class studentHome extends javax.swing.JFrame {
     public studentHome(String id) {
         initComponents();
         jTextField4.setText(id);
+    }
+
+    /**
+     *
+     * @return 
+     */
+    public static int SumOfMarks(int m1, int m2, int m3, int m4, int m5){
+        int marks = m1+m2+m3+m4+m5;
+        
+        return marks;
     }
 
     /**
@@ -139,7 +150,7 @@ public class studentHome extends javax.swing.JFrame {
 
         jLabel20.setText("100");
 
-        jLabel21.setText("100");
+        jLabel21.setText("500");
 
         jLabel22.setText("50");
 
@@ -151,7 +162,7 @@ public class studentHome extends javax.swing.JFrame {
 
         jLabel26.setText("50");
 
-        jLabel27.setText("250");
+        jLabel27.setText("50");
 
         jButton1.setText("LogOut");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -477,4 +488,6 @@ public class studentHome extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
+
+    
 }

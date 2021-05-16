@@ -161,7 +161,18 @@ public class registeredStudent extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    public String checkName(String name){
+        String pass = "invalid name";
+        if(name.length() == 0){
+            return pass;
+        }
+        else{
+            pass = "valid";
+            return pass;
+        }
+    }
+    
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         setVisible(false);

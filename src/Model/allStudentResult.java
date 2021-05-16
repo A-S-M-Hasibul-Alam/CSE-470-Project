@@ -152,7 +152,18 @@ public class allStudentResult extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    public String checkStatus(int m1,int m2,int m3,int m4,int m5) {
+        String res = "pass";
+        if(m1<50 || m2<50 || m3<50 || m4<50 || m5<50){
+            res = "failed";
+            return res;
+        }
+        else{
+            return res;
+        }
+    }
+    
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
         try{
